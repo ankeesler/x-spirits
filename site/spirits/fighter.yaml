@@ -1,0 +1,25 @@
+apiVersion: spirits.ankeesler.github.io/v1alpha1
+kind: Spirit
+  name: fighter
+spec:
+  health: 20
+  stats:
+    stats.x-spirits.ankeesler.github.io/power: 10
+    stats.x-spirits.ankeesler.github.io/armor: 20
+    stats.x-spirits.ankeesler.github.io/agility: 15
+  attributes:
+    weapons.x-spirits.ankeesler.github.io/type: sword
+    weapons.x-spirits.ankeesler.github.io/grade: silver
+    weapons.x-spirits.ankeesler.github.io/element: earth
+    types.x-spirits.ankeesler.github.io/earth: ""
+    types.x-spirits.ankeesler.github.io/fire: ""
+  action:
+    choices:
+      selection: Human
+      actions:
+        weapon:
+          registry:
+            url: ankeesler.github.io/x-spirits/actions/weapon.yaml
+        brawl:
+          registry:
+            url: ankeesler.github.io/x-spirits/actions/brawl.yaml
